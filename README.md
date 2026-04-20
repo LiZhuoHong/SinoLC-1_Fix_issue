@@ -86,12 +86,6 @@ pixel coordinates works.
    ROW_SRC_START = 42164   # <-- your value
    ROW_DST_START = 39479   # <-- your value
    ```
-
-> **Tip — using gdal_translate / gdalinfo instead of QGIS**
-> Run `gdalinfo -mm yourfile.tif` to confirm the raster dimensions, then use
-> the GDAL *Virtual Raster* preview or any pixel-picking tool to read column
-> and row indices at the duplicate boundary.
-
 ---
 
 ## Installation
@@ -176,10 +170,3 @@ The geographic origin (top-left corner) of the output raster is identical to
 that of the source, so the output can be directly overlaid with other layers
 that share the same CRS without any re-registration.
 
----
-
----
-
-## License
-
-MIT
